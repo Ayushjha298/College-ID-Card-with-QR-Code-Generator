@@ -1,0 +1,112 @@
+/* src/components/IDCardDisplay.css */
+.id-card-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.download-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4caf50; /* Green color for college theme */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+.id-card {
+  width: 350px; /* Adjust width to suit the college ID card size */
+  border: 2px solid #00eeba;
+  border-radius: 10px;
+  background-color: #0e1b2a;
+  color: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  overflow: hidden;
+}
+
+.id-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #004d40; /* Dark green header */
+  color: #fff;
+}
+
+.id-card-header .logo {
+  width: 50px;
+}
+
+.id-card-header div {
+  text-align: center;
+}
+
+.id-card-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.id-card-info {
+  flex: 2;
+}
+
+.id-card-info p {
+  margin: 5px 0;
+}
+
+.id-card-photo {
+  flex: 1;
+  text-align: center;
+}
+
+.id-card-photo img {
+  width: 100px;
+  height: 130px; /* Passport size dimensions */
+  object-fit: cover; /* Ensures the image fits within the container */
+}
+
+.id-card-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #004d40; /* Dark green footer */
+  color: #fff;
+}
+
+.id-card-footer .signature {
+  width: 80px;
+  height: auto;
+}
+
+.id-card-back {
+  padding: 10px;
+}
+
+.id-card-back-info p {
+  margin: 5px 0;
+}
+
+.id-card-back-qr {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .id-card {
+    width: 100%; /* Make the card responsive */
+  }
+
+  .id-card-photo img {
+    width: 80px; /* Adjust photo size for smaller screens */
+  }
+}
