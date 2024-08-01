@@ -37,7 +37,7 @@ A preview of the generated ID card with the embedded QR code.
 
 ### Download Page
 
-![Download Page](download-id-card.png)
+![Download Page](id-card-front.png)
 
 The page where users can download or print the generated ID card.
 
